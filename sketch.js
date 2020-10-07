@@ -44,9 +44,13 @@ function setup() {
 
 	box1 = createSprite(400,650,200,20);
 	box1.shapeColor=color(255,0,0);
+	
+	box1body = Bodies.rectangle(400,650,200,20,{isStatic:true});
 
 	box2 = createSprite(290,610,20,100);
 	box2.shapeColor=color(255,0,0);
+ 
+
 
 	box3 = createSprite(510,610,20,100);
 	box3.shapeColor=color(255,0,0);
@@ -64,6 +68,7 @@ function draw() {
   packageSprite.y= packageBody.position.y; 
   drawSprites();
  
+
 }
 
 
